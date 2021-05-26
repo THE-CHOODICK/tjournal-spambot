@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from time import sleep
 import sys
 import os
@@ -67,7 +66,7 @@ def validate_file(f):
 def argParser ():
     parser = argparse.ArgumentParser()
     parser.add_argument ('-a', '--amount', default=100, type=int)
-    parser.add_argument ('-d', '--driver', type=validate_file, default=["./chromedriver"])
+    parser.add_argument ('-d', '--driver', type=validate_file, default="./chromedriver")
     return parser
     
 if __name__ == "__main__":
