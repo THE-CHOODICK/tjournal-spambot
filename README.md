@@ -9,7 +9,8 @@ Simple python script with only one purpose - destroy tjournal statistics
 Clone spambot:
 
 ```
-git clone 
+git clone https://github.com/THE-CHOODICK/tjournal-spambot.git
+cd ./tjournal-spambot
 ```
 
 Install Python 3.6:
@@ -17,4 +18,22 @@ Install Python 3.6:
 ```
 sudo apt-get update
 sudo apt-get install python3.6
+```
+
+Install pip:
+
+```
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3.6 get-pip.py
+```
+Install requirements:
+
+```
+pip install -r requirements.txt
+```
+
+Run script:
+
+```
+python3.6 tj-bot.py --amount [integer]
 ```
